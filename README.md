@@ -4,4 +4,4 @@ In this game, I have included top tech billionaire founders of world and their c
 
 ## Player has to match image of founders to their respective company logo.
 
-### Live Preview at >> billionairememorygame.netlify.app
+### Live Preview at >> https://billionairememorygame.netlify.app/
