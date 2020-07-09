@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Maven+Pro:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="
+    icon"
+      href="images/game-logo.png"
+      sizes="10x10"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memory Game</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <div class="icon"><img src="images/game-logo.png" /></div>
+          <div class="logo-text">MemoryGame</div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="minimap"></div>
+      <div class="center-content">
+        <div class="display">
+          <p class="msg" id="msg">Start Game</p>
+        </div>
+        <div class="board"></div>
+      </div>
+      <div class="dashboard">
+        <div class="score-card">
+          <div class="top">
+            <img
+              src=""
+              class="pic md profile-pic pic-position"
+              id="profilePic"
+            />
+            <p class="player" id="player"></p>
+          </div>
+          <div class="middle">
+            <div class="score-row">
+              <p class="key">Score:</p>
+              <p class="val" id="score"></p>
+            </div>
+            <div class="score-row">
+              <p class="key">Times Played:</p>
+              <p class="val" id="times_played"></p>
+            </div>
+            <div class="score-row">
+              <p class="key">Matches:</p>
+              <p class="val" id="matches"></p>
+            </div>
+            <div class="score-row">
+              <p class="key">Time:</p>
+              <p class="val" id="time"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-main">
+          <div id="modalUpper">
+            <div class="modal-top">
+              <div class="hands">
+                <span
+                  class="iconify"
+                  data-inline="false"
+                  data-icon="twemoji:folded-hands"
+                  style="font-size: 3.56em;"
+                ></span>
+              </div>
+              <p class="welcome">Welcome</p>
+            </div>
+            <div class="modal-middle">
+              <input
+                type="text"
+                name="user"
+                id="textInput"
+                class="text-input"
+                placeholder="Enter name"
+              />
+              <br />
+              <input type="button" class="btn" id="submitBtn" value="Submit" />
+            </div>
+          </div>
+        </div>
+        <div class="modal-bottom">
+          <div class="restart">
+            <button id="restartBtn" class="btn">
+              <span
+                class="iconify"
+                data-inline="false"
+                data-icon="ri:restart-fill"
+                style="font-size: 2.4em;"
+              ></span>
+            </button>
+          </div>
+          <div class="para">
+            <p class="para1">
+              View on mobile in Landscape mode for better experience.
+            </p>
+            <p class="para2">
+              This website does not saves your data anywhere. It is only for
+              enjoy.
+            </p>
+          </div>
+          <div class="creator">
+            <p class="created-by">
+              Created by <span class="creator-name">Atal Patel</span>
+            </p>
+            <p class="username">@atalpatelme</p>
+            <ul class="icons">
+              <li>
+                <a href="https://twitter.com/atalpatelme" target="_blank"
+                  ><span
+                    class="iconify"
+                    data-inline="false"
+                    data-icon="entypo-social:twitter-with-circle"
+                    style="font-size: 1.6em;"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/atalpatelme" target="_blank"
+                  ><span
+                    class="iconify"
+                    data-inline="false"
+                    data-icon="eva:github-fill"
+                    style="font-size: 1.6em;"
+                  ></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://codepen.io/atalpatelme" target="_blank"
+                  ><span
+                    class="iconify"
+                    data-inline="false"
+                    data-icon="simple-icons:codepen"
+                    style="font-size: 1.6em;"
+                  ></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
